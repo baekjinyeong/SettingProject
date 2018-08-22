@@ -27,5 +27,18 @@
 ## 알고가기
 
 - export
+  - named exports
+  ```js
+  export { myFunction }; // exports a function declared earlier
+  export const foo = Math.sqrt(2); // 상수 exports
+  ```
+  - default export
+  ```js
+  export default myFunctionOrClass
+  ```
 
 - import
+  - name 파라미터는 export 되는 멤버를 받을 오브젝트의 이름
+  ```js
+  import name from "module-name";
+  ```
