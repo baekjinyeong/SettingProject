@@ -1,0 +1,67 @@
+// =============================================================================
+// Mixins
+// =============================================================================
+
+// Self Clear
+.self-clear() {
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+.body-width() {
+  min-width: 1344px;
+}
+.body-width-auto() {
+  width: 1344px;
+  margin: 0 auto;
+}
+
+// User Selection
+.user-select(@type: none) {
+  /* autoprefixer: off */
+  -webkit-user-select: @type;
+  -moz-user-select: @type;
+  -ms-user-select: @type;
+  -o-user-select: @type;
+  user-select: @type;
+}
+
+// Touch callout
+.touch-callout(@type: none) {
+  /* autoprefixer: off */
+  -webkit-touch-callout: @type;
+  -moz-touch-callout: @type;
+  touch-callout: @type;
+}
+
+// Tab highlighting
+.tap-highlight-color(@color: fade(#000, 0)) {
+  /* autoprefixer: off */
+  -webkit-tap-highlight-color: @color;
+  -moz-tap-highlight-color: @color;
+  tap-highlight-color: @color;
+}
+
+// 단어 단위로 줄바꿈
+.keep-word() {
+  word-break: keep-all;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+// hiding text
+.hidden-text(@display: block) {
+  display: @display;
+  overflow: hidden;
+  white-space: nowrap;
+  text-indent: 110%;
+  line-height: 2;
+}
+
+.break-word() {
+  word-break: keep-all;
+  word-wrap: break-word;
+}

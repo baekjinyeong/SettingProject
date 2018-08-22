@@ -1,0 +1,51 @@
+@import './common/base';
+@import './common/variables';
+@import './common/mixins';
+@import './sprites/sprite-form.less';
+@import './vender/swiper';
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  &.active {
+    background: red;
+  }
+}
+
+.icon {
+  display: inline-block;
+  .hidden-text(inline-block);
+  vertical-align: top;
+}
+
+.grid {
+  .self-clear;
+}
+
+.grid-item {
+  float: left;
+  width: 300px;
+  height: 350px;
+  border: 2px solid hsla(0, 0%, 0%, 0.5);
+  box-sizing: border-box;
+}
+
+.grid-item--width2 {
+  width: 600px;
+}
+
+.grid-item--height2 {
+  height: 700px;
+}
